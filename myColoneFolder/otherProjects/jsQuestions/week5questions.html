@@ -44,7 +44,7 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-              <div id="q1Results"></div>
+              <div id="q1Results">show me</div>
             </div>
           </div>
         </div>
@@ -68,7 +68,7 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-              <div id="q2Results"></div>
+              <div id="q2Results">show me</div>
             </div>
           </div>
         </div>
@@ -79,7 +79,24 @@
             <!--pre -->
             <div class="col-md-12">
               <pre>
-              test
+                function getTriangle(){
+
+                  var str == "";
+                  //we want the string below
+                  // # <br/> ## <br/> ### <br/> #### <br/> ##### <br/> ###### <br/> ####### <br/>
+
+                  //return answer;
+
+                  for(var i = 1; i <= 6; i++){
+                      //write i stars + <br/
+                      for (var j = i; j <= i; j++ ) {
+                        str = str +"#"
+                      }
+                      str = str + "<br/>";
+                  }
+                  //write the traingle to the screem
+                  ("#q1Results").html(str);
+
             </pre>
             </div>
             <!--button -->
@@ -92,7 +109,7 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-              <div id="q3Results"></div>
+              <div id="q3Results">show me</div>
             </div>
           </div>
         </div>
@@ -143,12 +160,14 @@
 
           //return answer;
 
-          for(var i=1; i<=6; i++){}
-          //write i stars + <br/
-            console.log("i"+i);
-            for(var j=1;j<=i;j++){
-              console.log("i" +i ="j"+j);
-            }
+          for(var i = 1; i <= 6; i++){
+              //write i stars + <br/
+              for (var j = i; j <= i; j++ ) {
+                str = str +"#"
+              }
+              str = str + "<br/>";
+          }
+          //write the traingle to the screem
           ("#q1Results").html(str);
 
         //}
