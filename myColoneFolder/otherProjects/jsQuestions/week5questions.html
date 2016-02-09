@@ -116,7 +116,7 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-              <div id="q4Results"></div>
+              <div id="q4Results">show me</div>
             </div>
           </div>
         </div>
@@ -126,20 +126,36 @@
   </div>
 
 <div>
-# <br/>
-## <br/>
-### <br/>
-#### <br/>
-##### <br/>
-###### <br/>
-####### <br/>
+
 </div>
 
   <script>
     //wait for DOM to load
     $(document).ready(function() {
+
+        //question 1
+        //this funtion prints the triangle of # to the screen
+        function getTriangle(){
+
+          var str == "";
+          //we want the string below
+          // # <br/> ## <br/> ### <br/> #### <br/> ##### <br/> ###### <br/> ####### <br/>
+
+          //return answer;
+
+          for(var i=1; i<=6; i++){}
+          //write i stars + <br/
+            console.log("i"+i);
+            for(var j=1;j<=i;j++){
+              console.log("i" +i ="j"+j);
+            }
+          ("#q1Results").html(str);
+
+        //}
         //code for Q1
         $("#q1Button").on("click", function() {
+            getTriangle();
+
           $("#q1Results").html("answer one");
         });
         $("#q2Button").on("click", function() {
