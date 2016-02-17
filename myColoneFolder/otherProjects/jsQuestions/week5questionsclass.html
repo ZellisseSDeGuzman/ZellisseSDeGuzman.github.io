@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Week 5 Questions</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <!-- each tab has an li; the a[href] corresponds to the id in the tabpanels -->
+      <li role="presentation" class="active"><a href="#Q1" aria-controls="Q1" role="tab" data-toggle="tab">Q1</a></li>
+      <li role="presentation"><a href="#Q2" aria-controls="Q2" role="tab" data-toggle="tab">Q2</a></li>
+      <li role="presentation"><a href="#Q3" aria-controls="Q3" role="tab" data-toggle="tab">Q3</a></li>
+      <li role="presentation"><a href="#Q4" aria-controls="Q4" role="tab" data-toggle="tab">Q4</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+
+      <!-- every panel has one of these divs; id corresponds to a[href]-->
+      <!-- question 1 -->
+      <div role="tabpanel" class="tab-pane active" id="Q1">
+        <!--use a bootstrap rwo-->
+        <div class="row">
+          <div class="col-md-12">
+            <!--put the code in here for display purposes  -->
+            <pre>
+            //this function adds up the values of an array and
+            //displays it to the screen
+            //
+            function doQuestion1() {
+            var arr = [23, 46, 34, 76],
+                total = 0;
+
+            //for each value in the array
+            for (var i = 0; i < arr.length; i++) {
+                //add to the total
+                total += arr[i];
+
+            }
+            //write the total to the results div
+            $("#answerQuestion1").html(total);
+
+            }
+
+            //user clicks button
+            $("#question1").on("click", function() {
+              doQuestion1();
+            })
+                </pre>
+          </div>
+          <!-- put a button here; the id corresponds to a jQuery click event -->
+          <div class="col-md-12">
+            <button id="question1" class="btn btn-default" type="submit">Run Code</button>
+          </div>
+          <!--put a div to dump the function output-->
+          <div class="col-md-12">
+            <div id="answerQuestion1"></div>
+          </div>
+
+        </div>
+      </div>
+      <!-- question 2 -->
+      <div role="tabpanel" class="tab-pane" id="Q2">
+        <div class="row">
+          <div class="col-md-12">
+            <pre>//will put code here
+                </pre>
+          </div>
+          <div class="col-md-12">
+            <button id="question2" class="btn btn-default" type="submit">Run Code</button>
+          </div>
+          <div class="col-md-12">
+            <div id="answerQuestion2"></div>
+          </div>
+
+        </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="Q3">
+
+      </div>
+      <div role="tabpanel" class="tab-pane" id="Q4">
+
+      </div>
+
+    </div>
+    <!-- end tab-content-->
+
+
+  </div>
+  <!-- end container-->
+  <script>
+    //wait for DOM to load
+    $(document).ready(function() {
+      //code for Q1
+      function doQuestion1() {
+        var arr = [23, 46, 34, 76],
+          total = 0;
+        //go through each item in the array
+        for (var i = 0; i < arr.length; i++) {
+          //add to the total
+          total += arr[i];
+        }
+        //display the answer on the screen by replacing the html of #answerQuestion1 with total
+        $("#answerQuestion1").html(total);
+      }
+      function doQuestion2() {
+      }
+      //when user clicks this button, call doQuestion1
+      $("#question1").on("click", function() {
+        doQuestion1();
+      })
+      $("#question2").on("click", function() {
+        doQuestion2();
+      })
+    })//end ready
+  </script>
+</body>
+
+</html>
