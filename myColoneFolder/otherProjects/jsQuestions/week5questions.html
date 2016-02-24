@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>templete</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Home</a></li>
+      <li role="presentation"><a href="#profile" aria-controls="tab2" role="tab" data-toggle="tab">Profile</a></li>
+      <li role="presentation"><a href="#messages" aria-controls="tab3" role="tab" data-toggle="tab">Messages</a></li>
+      <li role="presentation"><a href="#settings" aria-controls="tab4" role="tab" data-toggle="tab">Settings</a></li>
+    </ul>
+
+  <div class="tab-content">
+
+    <div role="tabpanel" class="tab-pane" id="tab1">
+          <div class="row">
+            <div class="col-md-12">
+              <pre>
+                function getTriangle(){
+
+                  var str == "";
+                  //we want the string below
+                  // # <br/> ## <br/> ### <br/> #### <br/> ##### <br/> ###### <br/> ####### <br/>
+
+                  //return answer;
+
+                  for(var i = 1; i <= 6; i++){
+                      //write i stars + <br/
+                      for (var j = i; j <= i; j++ ) {
+                        str = str +"#"
+                      }
+                      str = str + "<br/>";
+                  }
+                  <!--write the traingle to the screem-->
+                  ("#q1Results").html(str);
+                  </pre>
+            </div>
+            <div class="col-md-12">
+              <button id="tab1" class="btn btn-default" type="submit">Run Code</button>
+            </div>
+            <div class="col-md-12">
+              <div id="answertab1"></div>
+            </div>
+
+          </div>
+        </div>
+
+    <div class="row">
+        <div class="col-md-12">
+Lorem Ipsum
+        </div>
+    </div>
+</div>
+
+<script>
+      $(document).ready(function() {
+
+      });
+  </script>
+
+</body>
+</html>

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Week 5 Questions</title>
+  <title>templete</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -11,116 +11,181 @@
 </head>
 
 <body>
+
   <div class="container">
-    <!-- Nav tabs -->
-    <ul class="nav nav-tabs" role="tablist">
-      <!-- each tab has an li; the a[href] corresponds to the id in the tabpanels -->
-      <li role="presentation" class="active"><a href="#Q1" aria-controls="Q1" role="tab" data-toggle="tab">Q1</a></li>
-      <li role="presentation"><a href="#Q2" aria-controls="Q2" role="tab" data-toggle="tab">Q2</a></li>
-      <li role="presentation"><a href="#Q3" aria-controls="Q3" role="tab" data-toggle="tab">Q3</a></li>
-      <li role="presentation"><a href="#Q4" aria-controls="Q4" role="tab" data-toggle="tab">Q4</a></li>
-    </ul>
+    <div>
 
-    <!-- Tab panes -->
-    <div class="tab-content">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#q1" aria-controls="home" role="tab" data-toggle="tab">q1</a></li>
+        <li role="presentation"><a href="#q2" aria-controls="profile" role="tab" data-toggle="tab">q2</a></li>
+        <li role="presentation"><a href="#q3" aria-controls="messages" role="tab" data-toggle="tab">q3</a></li>
+        <li role="presentation"><a href="#q4" aria-controls="settings" role="tab" data-toggle="tab">q4</a></li>
+      </ul>
 
-      <!-- every panel has one of these divs; id corresponds to a[href]-->
-      <!-- question 1 -->
-      <div role="tabpanel" class="tab-pane active" id="Q1">
-        <!--use a bootstrap rwo-->
-        <div class="row">
-          <div class="col-md-12">
-            <!--put the code in here for display purposes  -->
-            <pre>
-            //this function adds up the values of an array and
-            //displays it to the screen
-            //
-            function doQuestion1() {
-            var arr = [23, 46, 34, 76],
-                total = 0;
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="q1">
+          <!--question 1 -->
+          <div class="row">
+            <!--pre -->
+            <div class="col-md-12">
+              <pre>
+                function getTriangle(){
 
-            //for each value in the array
-            for (var i = 0; i < arr.length; i++) {
-                //add to the total
-                total += arr[i];
+                  var str == "";
+                  //we want the string below
+                  // # <br/> ## <br/> ### <br/> #### <br/> ##### <br/> ###### <br/> ####### <br/>
 
-            }
-            //write the total to the results div
-            $("#answerQuestion1").html(total);
+                  //return answer;
 
-            }
-
-            //user clicks button
-            $("#question1").on("click", function() {
-              doQuestion1();
-            })
-                </pre>
+                  for(var i = 1; i <= 6; i++){
+                      //write i stars + <br/
+                      for (var j = i; j <= i; j++ ) {
+                        str = str +"#"
+                      }
+                      str = str + "<br/>";
+                  }
+                  <!--write the traingle to the screem--> 
+                  ("#q1Results").html(str);
+            </pre>
+            </div>
+            <!--button -->
           </div>
-          <!-- put a button here; the id corresponds to a jQuery click event -->
-          <div class="col-md-12">
-            <button id="question1" class="btn btn-default" type="submit">Run Code</button>
+          <div class="row">
+            <div class="col-md-12">
+              <button id="q1Butoon" class="btn btn-default" type="button">Button</button>
+            </div>
+            <!--results -->
           </div>
-          <!--put a div to dump the function output-->
-          <div class="col-md-12">
-            <div id="answerQuestion1"></div>
+          <div class="row">
+            <div class="col-md-12">
+              <div id="q1Results"></div>
+            </div>
           </div>
-
         </div>
-      </div>
-      <!-- question 2 -->
-      <div role="tabpanel" class="tab-pane" id="Q2">
-        <div class="row">
-          <div class="col-md-12">
-            <pre>//will put code here
-                </pre>
-          </div>
-          <div class="col-md-12">
-            <button id="question2" class="btn btn-default" type="submit">Run Code</button>
-          </div>
-          <div class="col-md-12">
-            <div id="answerQuestion2"></div>
-          </div>
 
+        <div role="tabpanel" class="tab-pane" id="q2">
+          <!--question 2 -->
+          <div class="row">
+            <!--pre -->
+            <div class="col-md-12">
+              <pre>
+              test
+            </pre>
+            </div>
+            <!--button -->
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <button id="q2Butoon" class="btn btn-default" type="button">Button</button>
+            </div>
+            <!--results -->
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div id="q2Results"></div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div role="tabpanel" class="tab-pane" id="Q3">
 
-      </div>
-      <div role="tabpanel" class="tab-pane" id="Q4">
+        <div role="tabpanel" class="tab-pane" id="q3">
+          <!--question 3 -->
+          <div class="row">
+            <!--pre -->
+            <div class="col-md-12">
+              <pre>
+              test
+              </pre>
+            </div>
+            <!--button -->
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <button id="q3Butoon" class="btn btn-default" type="button">Button</button>
+            </div>
+            <!--results -->
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div id="q3Results">show me</div>
+            </div>
+          </div>
+        </div>
 
+        <div role="tabpanel" class="tab-pane" id="q4">
+          <!--question 3 -->
+          <div class="row">
+            <!--pre -->
+            <div class="col-md-12">
+              <pre>
+              test
+            </pre>
+            </div>
+            <!--button -->
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <button id="q4Butoon" class="btn btn-default" type="button">Button</button>
+            </div>
+            <!--results -->
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div id="q4Results">show me</div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
-    <!-- end tab-content-->
-
-
   </div>
-  <!-- end container-->
+
+<div>
+
+</div>
+
   <script>
     //wait for DOM to load
     $(document).ready(function() {
-      //code for Q1
-      function doQuestion1() {
-        var arr = [23, 46, 34, 76],
-          total = 0;
-        //go through each item in the array
-        for (var i = 0; i < arr.length; i++) {
-          //add to the total
-          total += arr[i];
-        }
-        //display the answer on the screen by replacing the html of #answerQuestion1 with total
-        $("#answerQuestion1").html(total);
-      }
-      function doQuestion2() {
-      }
-      //when user clicks this button, call doQuestion1
-      $("#question1").on("click", function() {
-        doQuestion1();
-      })
-      $("#question2").on("click", function() {
-        doQuestion2();
-      })
-    })//end ready
+
+        //question 1
+        //this funtion prints the triangle of # to the screen
+        function getTriangle(){
+
+          var str == "";
+          //we want the string below
+          // # <br/> ## <br/> ### <br/> #### <br/> ##### <br/> ###### <br/> ####### <br/>
+
+          //return answer;
+
+          for(var i = 1; i <= 6; i++){
+              //write i stars + <br/
+              for (var j = i; j <= i; j++ ) {
+                str = str +"#"
+              }
+              str = str + "<br/>";
+          }
+          //write the traingle to the screem
+          ("#q1Results").html(str);
+
+        //}
+        //code for Q1
+        $("#q1Button").on("click", function() {
+            getTriangle();
+
+          $("#q1Results").html("answer one");
+        });
+        $("#q2Button").on("click", function() {
+          $("#q2Results").html("answer two");
+        });
+        $("#q3Button").on("click", function() {
+          $("#q3Results").html("answer three");
+        });
+        $("#q4Button").on("click", function() {
+          $("#q4Results").html("answer four");
+        });
+      }) //end ready
   </script>
 </body>
 
