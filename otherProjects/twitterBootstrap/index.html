@@ -2,150 +2,159 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Twitter Bootstrap Home Page</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Bootstrap 3 Responsive Template</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <nav role="navigation" class="navbar navbar-inverse">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <a href="#" class="navbar-brand">Mark Paul Anderson</a>
-            </div>
-            <!-- Collection of nav links, forms, and other content for toggling -->
-            <div id="navbarCollapse" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="../../index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Bootstrap Pages<b class="caret"></b></a>
-                        <ul role="menu" class="dropdown-menu">
 
-                            <li><a href="carousel.html">Carousel</a></li>
-                            <li><a href="week2.html">Week 2 pattern</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+  <div class="container">
+    <nav role="navigation" class="navbar navbar-inverse">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">Brand</a>
+      </div>
+      <!-- Collection of nav links, forms, and other content for toggling -->
+      <div id="navbarCollapse" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="http://zellissesdeguzman.github.io/index.html">Home</a></li>
+          <li><a href="#">Profile</a></li>
+          <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">Messages <b class="caret"></b></a>
+            <ul role="menu" class="dropdown-menu">
+              <li><a href="http://zellissesdeguzman.github.io/index.html">Home</a></li>
+              <li><a href="#">Drafts</a></li>
+              <li><a href="#">Sent Items</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Trash</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+    </nav> <!-- -->
 
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="jumbotron visible-lg-block">
-                    <h1>Learn to Create Websites fast!!!</h1>
-                    <p>In today's world internet is the most popular way of connecting with the people. At <a href="http://www.tutorialrepublic.com"
-                            target="_blank">tutorialrepublic.com</a> you will learn the essential of web development
-                        technologies along with real life practice example, so that you can create your own website
-                        to connect with the people around the world.</p>
-                    <p><a href="http://www.tutorialrepublic.com" target="_blank" class="btn btn-primary btn-lg">Get started today</a></p>
-                </div>
-            </div>
+    <div class="jumbotron">
+      <h1>Learn to Create Websites</h1>
+      <p>In today's world internet is the most popular way…</p>
+      <p><a href="#" class="btn btn-primary btn-lg">Learn more</a></p>
+    </div>
 
-            <div class="col-sm-6 col-lg-4">
-                <img src="images/catTwo.jpg" width="350" class="img-rounded" alt="Rounded Image">
-            </div>
-            <div class="col-sm-6 col-lg-4">
+    <div class="row">
 
-                <div class="media">
-                    <div class="media-body">
-                        <h4 class="media-heading">Jhon Carter <small><i>Posted on January 10, 2014</i></small></h4>
-                        <p>Excellent feature! I love it. One day I'm definitely going to put this Bootstrap component
-                            into use and I'll let you know once I do.</p>
-                    </div>
-                    <div class="media-right">
-                        <a href="#">
-                            <img src="images/pinkCat.ico" width="150" class="media-object img-circle" alt="Sample Image">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <span class="glyphicon glyphicon-envelope"></span>
-                <span class="glyphicon glyphicon-text-background"></span>
-                <span class="glyphicon glyphicon-cloud"></span>
-                <span class="glyphicon glyphicon-star-empty"></span>
+      <div class="col-sm-4 col-lg-6">
+        <img src="images/pupleDog.jpg" class="img-rounded" alt="Rounded Image">
+      </div>
+
+      <div class="col-sm-4 col-lg-6">
+        <div class="media">
+          <div class="media-left">
+            <a href="#">
+              <img src="avatar-tiny.jpg" class="media-object img-circle" alt="Sample Image">
+            </a>
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">Jhon Carter <small><i>Posted on January 10, 2014</i></small></h4>
+            <p>Excellent feature! I love it. One day I'm definitely going to put this Bootstrap component into use and I'll let you know once I do.</p>
+          </div>
+        </div>
+      </div>
+      <!-- end colume-->
+
+      <div class="col-sm-4 col-lg-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">This Page is Disabled
+          </div>
+          <div class="panel-body">This page is temporarily disabled by the site administrator for some reason.
+            <br> <a href="#">Click here</a> to enable the page.
+          </div>
+        </div>
+      </div>
+      <!-- end colume-->
+
+      <div class="col-sm-4 col-lg-6">
+        <span class="glyphicon glyphicon-menu-left"></span>
+      </div>
+      <!-- end colume-->
+
+      <div class="col-sm-4 col-lg-6">
+        <span class="glyphicon glyphicon-menu-up"></span>
+      </div>
+      <!-- end colume-->
+
+      <div class="col-sm-4 col-lg-6">
+        <span class="glyphicon glyphicon-menu-right"></span>
+      </div>
+      <!-- end colume-->
+
+      <div class="col-sm-4 col-lg-6">
+        <span class="glyphicon glyphicon-menu-down"></span>
+      </div>
+      <!-- end colume-->
+
+      <div class="col-sm-4 col-lg-6">
+        <div class="panel panel-default">
+          <div class="panel-body">This page is temporarily disabled by the site administrator for some reason.
+          </div>
+          <div class="panel-footer clearfix">
+            <div class="pull-right">
+              <a href="#" class="btn btn-primary">Learn More</a>
+              <a href="#" class="btn btn-default">Go Back</a>
             </div>
           </div>
-<div class="row">
-            <div class="col-sm-6 col-lg-4">
-                <span class="badge">24</span> <span class="badge">5</span>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h1 class="panel-title">Panel Title</h1>
-                    </div>
-                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at,
-                        luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum
-                        id metus ac nisl bibendum scelerisque non non purus.</div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="panel panel-default">
-                    <div class="panel-body">This page is temporarily disabled by the site administrator for some reason.</div>
-                    <div class="panel-footer clearfix">
-                        <div class="pull-right">
-                            <a href="#" class="btn btn-primary">Learn More</a>
-                            <a href="#" class="btn btn-default">Go Back</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-4">
-                <div class="progress progress-striped">
-                    <div class="progress-bar progress-bar-info" style="width: 20%">
-                        <span class="sr-only">20% Used</span>
-                    </div>
-                </div>
-                <div class="progress progress-striped">
-                    <div class="progress-bar progress-bar-success" style="width: 40%">
-                        <span class="sr-only">40% Used</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-
-            </div>
-            <div class="col-sm-6 col-lg-4">
-
-            </div>
-
-            <div class="col-sm-6 col-lg-4">
-
-            </div>
-            <div class="col-sm-6 col-lg-4">
-
-            </div>
-            <div class="col-sm-6 col-lg-4">
-
-            </div>
-            <div class="col-sm-6 col-lg-4">
-
-            </div>
-            <div class="col-sm-6 col-lg-4">
-
-            </div>
-            <div class="col-sm-6 col-lg-4">
-
-            </div>
-
-            <div class="col-sm-6 col-lg-4">
-
-            </div>
-            <div class="col-sm-6 col-lg-4">
-
-            </div>
-            <div class="col-sm-6 col-lg-4">
-
-            </div>
-
         </div>
+      </div>
+      <!-- end colume-->
+
+      <div class="col-sm-4 col-lg-6">
+        <div class="progress progress-striped">
+          <div class="progress-bar progress-bar-info" style="width: 20%">
+            <span class="sr-only">20% Used</span>
+          </div>
+        </div>
+        <div class="progress progress-striped">
+          <div class="progress-bar progress-bar-success" style="width: 40%">
+            <span class="sr-only">40% Used</span>
+          </div>
+        </div>
+        <div class="progress progress-striped">
+          <div class="progress-bar progress-bar-warning" style="width: 80%">
+            <span class="sr-only">80% Used</span>
+          </div>
+        </div>
+        <div class="progress progress-striped">
+          <div class="progress-bar progress-bar-danger" style="width: 90%">
+            <span class="sr-only">90% Used</span>
+          </div>
+        </div>
+      </div>
+      <!-- end colume-->
+
+      <div class="col-sm-4 col-lg-6">
+        <div class="progress progress-striped">
+          <div class="progress-bar" style="width: 60%;">
+            <span class="sr-only">60% Complete</span>
+          </div>
+        </div>
+      </div>
+      <!-- end colume-->
+
     </div>
+    <!--end row-->
+  </div>
+  <!--end container-->
 </body>
 
 </html>
