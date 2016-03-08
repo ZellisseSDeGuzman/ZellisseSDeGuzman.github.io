@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap 3 Responsive Template</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+    </div>
+  </div>
+  <script>
+  function muliptling(factor, numberOfTimes) {
+    var i;
+    for (i = 1; i <= numberOfTimes; i++) {
+      document.write(factor + " * " + i + " = " + (factor * i) + "<br>");
+    }
+  }
+  //alert(displayNumber);
+  var displayNumber = 0;
+  while (displayNumber != -1) {
+    displayNumber = prompt("enter a number to be times");
+    muliptling(displayNumber, 12);
+
+  }
+  </script>
+</body>
+
+</html>
