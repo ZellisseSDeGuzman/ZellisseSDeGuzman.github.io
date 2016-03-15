@@ -61,7 +61,27 @@
         <div role="tabpanel" class="tab-pane active" id="q1">
           <h3>Question 1</h3>
             <pre>
-              for(i=1; j<=1; j++)
+              <!--for(i=1; j<=1; j++)-->
+
+
+              $("#Q1button").on("click", function() {
+                     var str = "";
+                     for (var i = 1; i <= 6; i++) {
+                         // write i stars +
+
+                         console.log("i+ " + 1);
+                         for (var j = 1; j <= i; j++) {
+
+                             str = str + "#";
+                             console.log("str " + str);
+
+                         }
+             str = str + "
+";
+                     }
+
+                 $("#Q1result").html(str);
+             });
 
             </pre>
           </div>
