@@ -20,7 +20,7 @@ $.get("http://zellissesdeguzman.github.io/partials/nav.html", function(data) {
     //if so add nav.html contents to the top
     if (container) {
       container.prepend(data)
-      container.fadeIn();
+    //  container.fadeIn();
     }
 
   });
