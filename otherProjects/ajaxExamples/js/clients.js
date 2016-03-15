@@ -1,14 +1,30 @@
-$("#getClients").on("click", function() {
+$(document).ready(function)({
 
-  var url = "http://ZellisseSDeGuzman.github.io/otherProjects/ajaxExamples/jsonDatabase/clients.json"
-  $.getJSON(url, function (data){
+  $("#getClients").on("click", function() {
 
-  //$.getJSON("http://ZellisseSDeGuzman.github.io/otherProjects/ajaxExamples/jsonDatabase/clients.json")
+    var url = "http://ZellisseSDeGuzman.github.io/otherProjects/ajaxExamples/jsonDatabase/clients.json"
+    $.getJSON(url, function(data) {
 
-  alert(data);
-  console.dir(data);
+        //$.getJSON("http://ZellisseSDeGuzman.github.io/otherProjects/ajaxExamples/jsonDatabase/clients.json")
+var html ="<table>"+
+"<tr><th>Name</tr><th>Email</th><th>Company</th></tr>";
 
-})//getJSON
+        $.each(data, function(index, item) {
+          //$("#data").append(item.name);
+
+            html += "<tr>" +
+              "<td>" + item.name + "</td>" +
+              "<td>" + item.email + "</td>" +
+              "<td>" + item.company + "</td>" +
+              "</tr>";
+
+            })
+        //alert(data);
+        //console.dir(data);
+
+      }) //getJSON
 
 
-})//click
+  }) //click
+
+})//document
