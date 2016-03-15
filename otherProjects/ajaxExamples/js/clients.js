@@ -4,10 +4,11 @@ $(document).ready(function)({
 
     var url = "http://ZellisseSDeGuzman.github.io/otherProjects/ajaxExamples/jsonDatabase/clients.json"
     $.getJSON(url, function(data) {
+      var html ="<table class='table table-hover table-striped'>" +
+      "<tr><th>Name</tr><th>Email</th><th>Company</th></tr>";
+
 
         //$.getJSON("http://ZellisseSDeGuzman.github.io/otherProjects/ajaxExamples/jsonDatabase/clients.json")
-var html ="<table>"+
-"<tr><th>Name</tr><th>Email</th><th>Company</th></tr>";
 
         $.each(data, function(index, item) {
           //$("#data").append(item.name);
