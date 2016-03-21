@@ -3,9 +3,12 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Bootstrap 3 Responsive Template</title>
+  <title>w5 - jsQuestions</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+
+  <link rel="stylesheet" href="https://zellissesdeguzman.github.io/css/style.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
@@ -47,112 +50,76 @@
     </nav>
   -->
 
-    <div>
-      <!-- Nav tabs -->
-      <ul class="nav nav-tabs" role="tablist">
-        <li data-toggle="tab">#q1</a>q1</li>
-        <li data-toggle="tab">#q2</a>q2</li>
-        <li data-toggle="tab">#q3</a>q3</li>
-        <li data-toggle="tab">#q4</a>q4</li>
-      </ul>
+  <div>
 
-      <!-- Tab panes -->
-      <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="q1">
-          <h3>Question 1</h3>
-            <pre>
-              <!--for(i=1; j<=1; j++)-->
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#q1" aria-controls="home" role="tab" data-toggle="tab">question 1</a></li>
+      <li role="presentation"><a href="#q2" aria-controls="profile" role="tab" data-toggle="tab">question 2</a></li>
+      <li role="presentation"><a href="#q3" aria-controls="messages" role="tab" data-toggle="tab">question 3</a></li>
+      <li role="presentation"><a href="#q4" aria-controls="settings" role="tab" data-toggle="tab">question 4</a></li>
+      <li role="presentation"><a href="#q4" aria-controls="settings" role="tab" data-toggle="tab">question 5</a></li>
+      <li role="presentation"><a href="#q4" aria-controls="settings" role="tab" data-toggle="tab">question 6</a></li>
+      <li role="presentation"><a href="#q4" aria-controls="settings" role="tab" data-toggle="tab">question 7</a></li>
+    </ul>
 
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="Q1">
+                       <div class="row">
+                           <div class="col-md-12">
+                               <pre>   $("#Q1button").on("click", function() {
+                           var str = "";
+                           for (var i = 1; i <= 6; i++) {
+                               // write i stars + <br/>
+                               console.log("i+ " + 1);
+                               for (var j = 1; j <= i; j++) {
 
-              $("#Q1button").on("click", function() {
-                     var str = "";
-                     for (var i = 1; i <= 6; i++) {
-                         // write i stars +
+                                   str = str + "#";
+                                   console.log("str " + str);
 
-                         console.log("i+ " + 1);
-                         for (var j = 1; j <= i; j++) {
+                               }
+   								str = str + "<br/>";
+                           }
 
-                             str = str + "#";
-                             console.log("str " + str);
+                       $("#Q1result").html(str);
+                   });</pre>
+                           </div>
+                           <div class="col-md-12"><button id="Q1button" type="button" class="btn btn-primary">Primary</button></div>
+                           <div class="col-md-12">
+                               <div id="Q1result"></div>
+                           </div>
 
-                         }
-             str = str + "
-";
-                     }
+                       </div>
+                   </div>
 
-                 $("#Q1result").html(str);
-             });
+      <div role="tabpanel" class="tab-pane" id="q2">
 
-            </pre>
-          </div>
-          <!--end of question 1-->
-        <div role="tabpanel" class="tab-pane" id="q2">
-          <h3>Question 2</h3>
-            <pre>
-
-
-            </pre>
-        </div>
-        <!--end of question 2-->
-        <div role="tabpanel" class="tab-pane" id="q3">
-          <h3>Question 3</h3>
-            <pre>
-
-
-            </pre>
-        </div>
-        <!--end of question 3-->
-        <div role="tabpanel" class="tab-pane" id="q4">
-          <h3>Question 4</h3>
-            <pre>
-
-
-            </pre>
-        </div>
-        <!--end of question 4-->
-        <div role="tabpanel" class="tab-pane" id="q5">
-          <h3>Question 5</h3>
-            <pre>
-
-
-            </pre>
-        </div>
-        <!--end of question 5-->
-        <div role="tabpanel" class="tab-pane" id="q6">
-          <h3>Question 6</h3>
-            <pre>
-
-
-            </pre>
-        </div>
-        <!--end of question 6-->
-        <div role="tabpanel" class="tab-pane" id="q7">
-          <h3>Question 7</h3>
-            <pre>
-
-
-            </pre>
-        </div>
-        <!--end of question 7-->
-        <div role="tabpanel" class="tab-pane" id="q8">
-          <h3>Question 8</h3>
-            <pre>
-
-
-            </pre>
-        </div>
-        <!--end of question 8-->
       </div>
-      <div role="tabpanel" class="tab-pane" id="q9">
-        <h3>Question 9</h3>
-          <pre>
 
+      <div role="tabpanel" class="tab-pane" id="q3">
 
-          </pre>
       </div>
-      <!--end of question 9-->
+
+      <div role="tabpanel" class="tab-pane" id="q4">
+
+      </div>
+
+      <div role="tabpanel" class="tab-pane" id="q5">
+
+      </div>
+
+      <div role="tabpanel" class="tab-pane" id="q6">
+
+      </div>
+
+      <div role="tabpanel" class="tab-pane" id="q7">
+
+      </div>
 
     </div>
+
+  </div>
 
     <footer class="row footer">
       <p class="text-muted rowMargins">Place sticky footer content here.</p>

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jsQuestions</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link href="http://AliceInWonderlandRose.github.io/css/stylesheet.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<!-- <nav role="navigation" class="navbar navbar-inverse">
+
+        <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+            <a href="#" class="navbar-brand">ANIME ROCKS</a>
+        </div>
+
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="http://AliceInWonderlandRose.github.io/index.html">Home</a></li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">JS Questions <b class="caret"></b></a>
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a href="#">Display Questions Example</a></li>
+                        <li><a href="#">Button Event Example</a></li>
+                        <li><a href="http://AliceInWonderlandRose.github.io/Other%20projects/jsQuestions/index.html">Week 5</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Assignments <b class="caret"></b></a>
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a href="http://AliceInWonderlandRose.github.io/Other%20projects/Code%20Acadamy/index.html">Code Academy</a></li>
+                        <li><a href="http://AliceInWonderlandRose.github.io/Other%20projects/TwitterBootstrap/index.html">Twitter Bootstrap</a></li>
+                        <li><a href="http://AliceInWonderlandRose.github.io/Other%20projects/TwitterBootstrap/carousel.html">Carousel</a></li>
+    			 <li><a href="http://AliceInWonderlandRose.github.io/Other%20projects/ticTacToe/index.html">Tic Tac Toe</a></li>
+                <li><a href="http://AliceInWonderlandRose.github.io/Other%20projects/takeAnOrder/takeAnOrderBootstrap.html">Take an Order</a></li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+            <form role="search" class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" placeholder="Search" class="form-control">
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+-->
+
+    <div class="container">
+
+        <div>
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#Q1" aria-controls="home" role="tab" data-toggle="tab">Question 1</a></li>
+                <li role="presentation"><a href="#Q2" aria-controls="profile" role="tab" data-toggle="tab">Question 2</a></li>
+                <li role="presentation"><a href="#Q3" aria-controls="messages" role="tab" data-toggle="tab">Question 3</a></li>
+                <li role="presentation"><a href="#Q4" aria-controls="settings" role="tab" data-toggle="tab">Question 4</a></li>
+                <li role="presentation"><a href="#Q5" aria-controls="settings" role="tab" data-toggle="tab">Question 5</a></li>
+                <li role="presentation"><a href="#Q6" aria-controls="settings" role="tab" data-toggle="tab">Question 6</a></li>
+                <li role="presentation"><a href="#Q7" aria-controls="settings" role="tab" data-toggle="tab">Question 7</a></li>
+                <li role="presentation"><a href="#Q8" aria-controls="settings" role="tab" data-toggle="tab">Question 8</a></li>
+                <li role="presentation"><a href="#Q9" aria-controls="settings" role="tab" data-toggle="tab">Question 9</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="Q1">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <pre>   $("#Q1button").on("click", function() {
+                        var str = "";
+                        for (var i = 1; i <= 6; i++) {
+                            // write i stars + <br/>
+                            console.log("i+ " + 1);
+                            for (var j = 1; j <= i; j++) {
+
+                                str = str + "#";
+                                console.log("str " + str);
+
+                            }
+								str = str + "<br/>";
+                        }
+
+                    $("#Q1result").html(str);
+                });</pre>
+                        </div>
+                        <div class="col-md-12"><button id="Q1button" type="button" class="btn btn-primary">Primary</button></div>
+                        <div class="col-md-12">
+                            <div id="Q1result"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="Q2">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <pre>
+                $("#Q2button").on("click", function() {
+                            var foobar ="";
+				for(var i=1; i<=100; i++){
+				if(i%3===0 && i%5===0){
+				document.write('FooBar');}
+				else if(i%3===0){
+				document.write('Foo');}
+				else if(i%5===0){
+				document.write('Bar');}
+				else {
+					// This writes for every # that is not a multiple of three or five
+					document.write(i);
+					// document.write publishes it to the page
+				}
+				}
+
+
+				$("#Q2result").html(i);
+            });</pre>
+                        </div>
+                        <div class="col-md-12"><button id="Q2button" type="button" class="btn btn-primary">Primary</button></div>
+                        <div class="col-md-12">
+                            <div id="Q2result"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div role="tabpanel" class="tab-pane" id="Q3">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <pre>
+ 			$("#Q3button").on("click", function() {
+               	 var str = "";
+				for(var i = 0; i < 8; i++) {
+				for(var j = 0; j < 8; j++) {
+				if((i+j)%2 == 0) {
+  					str += " ";}
+				else {str += "#";}
+						}
+				console.log(str); //newline included
+				str = "";
+
+						}
+
+				$("#Q3result").html("Check Console");
+            });
+
+                            </pre>
+                        </div>
+                        <div class="col-md-12"><button id="Q3button" type="button" class="btn btn-primary">Primary</button></div>
+                        <div class="col-md-12">
+                            <div id="Q3result"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="Q4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <pre>
+                             $("#Q4button").on("click", function() {
+    var B = ""; //this is a variabale
+    var sen = prompt("Just type"); // text box
+    var countB = []; //this is an array that counts the B's
+    for (var i = 0; i < sen.length; i++) { //i < sen.length; this is the limit of the search (whatever they type in the box)
+        if (sen[i] === "B") { //trying to find the B
+            countB.push("B"); // push the answer in the screen
+        }
+    }
+
+    // this text "How many Bs" or if there are no B's text would say "No B's"
+    if (countB.length === 0) { // What happens when there are no B's :ALSO .length is number of characters.
+        B = "No B's";
+    } else { // What happens when there are B's
+        B = countB.length;
+    }
+    $("#Q4result").html(B);
+});
+                           </pre>
+                        </div>
+                        <div class="col-md-12"><button id="Q4button" type="button" class="btn btn-primary">Primary</button></div>
+                        <div class="col-md-12">
+                            <div id="Q4result"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="Q5">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <pre>
+                             $("#Q5button").on("click", function() {
+
+		var B = ""; //this is a variabale
+		var sen = prompt ("Just type"); // text box
+		var countChar = [];
+		//var countB = []; //this is an array that counts the B's
+		for (var i = 0; i < sen.length;  i++) { //i < sen.length; this is the limit of the search (whatever they type in the box)
+			if (sen [i]==="B") { //trying to find the B
+				countChar.push("B","b"); // push the answer in the screen
+			}
+		}
+
+		// this text "How many Bs" or if there are no B's text would say "No B's"
+		if (countChar.length ===0){ // What happens when there are no B's :ALSO .length is number of characters.
+			B = "No B's or b's";
+			}
+
+		else { // What happens when there are B's
+			B = countChar.length;
+			}
+
+        $("#Q5result").html(B);
+    });
+
+                    </pre>
+                        </div>
+                        <div class="col-md-12"><button id="Q5button" type="button" class="btn btn-primary">Primary</button></div>
+                        <div class="col-md-12">
+                            <div id="Q5result"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="Q6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <pre> function range (start,end){
+		 var arr = [];
+		 	//arr.push(1);
+			//arr.push(5);
+			for (start; start <= end; start++){
+				arr.push(start);
+
+				}
+
+		 return arr;
+	 }
+
+ 	$("#Q6button").on("click", function() {
+
+		//range (3,5);
+		var rangeAnswer = range(2,6);
+
+	$("#Q6result").html("Answer is: " + rangeAnswer.join());
+            }); </pre>
+                        </div>
+                        <div class="col-md-12"><button id="Q6button" type="button" class="btn btn-primary">Primary</button></div>
+                        <div class="col-md-12">
+                            <div id="Q6result"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="Q7">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <pre>$("#Q7button").on("click", function() {
+
+		var arr = [1,2,3,4];
+		var total=0;
+		for(var i in arr) { total += arr[i]; }
+
+            $("#Q7result").html(total);
+        });
+
+       </pre>
+                        </div>
+                        <div class="col-md-12"><button id="Q7button" type="button" class="btn btn-primary">Primary</button></div>
+                        <div class="col-md-12">
+                            <div id="Q7result"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="Q8">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <pre>        function range (end,start){
+		 var arr = [];
+		 	//arr.push(5);
+			//arr.push(1);
+			for (end; end >= start; end--){
+				arr.push(end);
+
+				}
+
+		 return arr;
+	 }
+
+
+
+		$("#Q8button").on("click", function() {
+
+
+		var reverseArray = range(5,1);
+
+
+
+            $("#Q8result").html("Answer is: " + reverseArray.join());
+        });
+</pre>
+                        </div>
+                        <div class="col-md-12"><button id="Q8button" type="button" class="btn btn-primary">Primary</button></div>
+                        <div class="col-md-12">
+                            <div id="Q8result"></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="Q9">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <pre> function range (end,start){
+		 var arr = [];
+		 	//arr.push(5);
+			//arr.push(1);
+			for (end; end >= start; end--){
+				arr.push(end);
+
+				}
+
+		 return arr;
+	 }
+
+
+
+
+
+		$("#Q9button").on("click", function() {
+
+           //var reverseArray = range(5,1);
+		  var reverseArrayInPlace =range(5,1);
+		    $("#Q9result").html("Answer is: " + reverseArrayInPlace);
+        });</pre>
+                        </div>
+                        <div class="col-md-12"><button id="Q9button" type="button" class="btn btn-primary">Primary</button></div>
+                        <div class="col-md-12">
+                            <div id="Q9result"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    <footer class="row footer">
+<p class="text­muted rowMargins">Place sticky footer content here.</p>
+</footer>
+
+
+
+    </div>
+    <script>
+         $(document).ready(function() {
+    $("#Q1button").on("click", function() {
+        var str = "";
+        // we want the string below
+        //#<br/> ####<br/> #####<br/> ######<br/> #######<br/>
+        for (var i = 1; i <= 6; i++) {
+            // write i stars + <br/>
+            console.log("i+ " + 1);
+            for (var j = 1; j <= i; j++) {
+                str = str + "#";
+                console.log("str " + str);
+            }
+            str = str + "<br/>";
+        }
+        $("#Q1result").html(str);
+    });
+    $("#Q2button").on("click", function() {
+        var foobar = "";
+        for (var i = 1; i <= 100; i++) {
+            if (i % 3 === 0 && i % 5 === 0) {
+                foobar += "FooBar <br>";
+                // Link things together in a chain or series.
+            } else if (i % 3 === 0) {
+                foobar += "Foo <br>";
+            } else if (i % 5 === 0) {
+                foobar += "Bar <br>";
+            } else {
+                // This writes for every # that is not a multiple of three or five
+                //document.write(i);
+                // document.write publishes it to the page
+                foobar += i + "<br>";
+            }
+        }
+        $("#Q2result").html(foobar);
+        //bewareOfCaps <- write like this
+        //First word is lowercase and others capital NO SPACES!
+    });
+    $("#Q3button").on("click", function() {
+        var str = "";
+        for (var i = 0; i < 8; i++) {
+            for (var j = 0; j < 8; j++) {
+                if ((i + j) % 2 == 0) {
+                    str += " ";
+                } else {
+                    str += "#";
+                }
+            }
+
+          str = str + "#";
+                console.log("str " + str);
+            }
+            str = str + "<br/>";
+
+
+        $("#Q3result").html(str);
+    });
+
+    $("#Q4button").on("click", function() {
+		var B = ""; //this is a variabale
+		var sen = prompt ("Just type"); // text box
+		var countB = []; //this is an array that counts the B's
+		for (var i = 0; i <sen.length;  i++) { //i <sen.length; this is the limit of the search (whatever they type in the box)
+			if (sen [i]==="B") { //trying to find the B
+				countB.push("B"); // push the answer in the screen
+			}
+		}
+
+		// this text "How many Bs" or if there are no B's text would say "No B's"
+		if (countB.length ===0){ // What happens when there are no B's :ALSO .length is number of characters.
+			B = "No B's";
+			}
+
+		else { // What happens when there are B's
+			B = countB.length;
+			}
+        $("#Q4result").html(B);
+    });
+
+
+
+    $("#Q5button").on("click", function() {
+		var B = ""; //this is a variabale
+		var sen = prompt ("Just type"); // text box
+		var countChar = [];
+		//var countB = []; //this is an array that counts the B's
+		for (var i = 0; i <sen.length;  i++) { //i <sen.length; this is the limit of the search (whatever they type in the box)
+			if (sen [i]==="B") { //trying to find the B
+				countChar.push("B","b"); // push the answer in the screen
+			}
+		}
+
+		// this text "How many Bs" or if there are no B's text would say "No B's"
+		if (countChar.length ===0){ // What happens when there are no B's :ALSO .length is number of characters.
+			B = "No B's or b's";
+			}
+
+		else { // What happens when there are B's
+			B = countChar.length;
+			}
+
+        $("#Q5result").html(B);
+    });
+    function range(start, end) {
+        var arr = [];
+        //arr.push(1);
+        //arr.push(5);
+        for (start; start <= end; start++) {
+            arr.push(start);
+        }
+        return arr;
+    }
+    $("#Q6button").on("click", function() {
+        //range (3,5);
+        var rangeAnswer = range(2, 6);
+        $("#Q6result").html("Answer is: " + rangeAnswer.join());
+    });
+    $("#Q7button").on("click", function() {
+        var arr = [1, 2, 3, 4];
+        var total = 0;
+        for (var i in arr) {
+            total += arr[i];
+        }
+        $("#Q7result").html(total);
+    });
+});
+function range(end, start) {
+    var arr = [];
+    //arr.push(5);
+    //arr.push(1);
+    for (end; end >= start; end--) {
+        arr.push(end);
+    }
+    return arr;
+}
+$("#Q8button").on("click", function() {
+    var reverseArray = range(5, 1);
+    $("#Q8result").html("Answer is: " + reverseArray.join());
+});
+function range(end, start) {
+    var arr = [];
+    //arr.push(5);
+    //arr.push(1);
+    for (end; end >= start; end--) {
+        arr.push(end);
+    }
+    return arr;
+}
+$("#Q9button").on("click", function() {
+    //var reverseArray = range(5,1);
+    var reverseArrayInPlace = range(5, 1);
+    $("#Q9result").html("Answer is: " + reverseArrayInPlace);
+});
+
+
+    </script>
+
+
+<script src="http://AliceInWonderlandRose.github.io/js/getNav.js"></script>
+</body>
+
+</html>
