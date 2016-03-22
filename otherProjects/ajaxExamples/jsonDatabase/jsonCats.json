@@ -1,0 +1,59 @@
+[{
+  "type" : "Calico",
+  "name" : "Paws",
+  "gender" : "Male",
+  "image" : "images/cat1.jpg",
+  "comments": [
+    {
+      "username" : "BestBud",
+      "stars" : 5,
+      "comment" : "can i keep it?"
+      },
+      {
+        "username" : "KoolKid",
+        "stars" : 2,
+        "comment" : "He was cute, but not fun.",
+        "image" : "images/cat2.jpg",
+        },
+        {
+          "username" : "PowerMan",
+          "stars" : 3,
+          "comment" : "Id rent him again!",
+          "image" : "images/cat3.jpg",
+          }
+        ]
+  },
+  {
+    "type":"Tabby",
+    "name":"Mittens",
+    "gender":"Female",
+    "image":"images/cat2.jpg",
+    "comments": [
+      {
+
+      },
+      {
+
+      },
+      {
+
+        }
+      ]
+    },
+    {
+      "type":"Siamese",
+      "name":"Robert",
+      "gender":"Unspecified",
+      "image":"images/cat3.jpg",
+      "comments": [
+        {
+
+          },
+          {
+
+            },
+            {
+
+              }
+            ]
+      }]
