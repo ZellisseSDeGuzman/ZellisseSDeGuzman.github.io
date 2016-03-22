@@ -16,7 +16,7 @@
 <body>
 
   <div class="container">
-  <!--  <nav role="navigation" class="navbar navbar-inverse">
+    <!--  <nav role="navigation" class="navbar navbar-inverse">
        //Brand and toggle get grouped for better mobile display
       <div class="navbar-header">
         <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
@@ -50,87 +50,509 @@
     </nav>
   -->
 
-  <div>
+    <div>
 
-    <!-- Nav tabs -->
-    <ul class="nav nav-tabs" role="tablist">
-      <li role="presentation" class="active"><a href="#q1" aria-controls="home" role="tab" data-toggle="tab">question 1</a></li>
-      <li role="presentation"><a href="#q2" aria-controls="profile" role="tab" data-toggle="tab">question 2</a></li>
-      <li role="presentation"><a href="#q3" aria-controls="messages" role="tab" data-toggle="tab">question 3</a></li>
-      <li role="presentation"><a href="#q4" aria-controls="settings" role="tab" data-toggle="tab">question 4</a></li>
-      <li role="presentation"><a href="#q4" aria-controls="settings" role="tab" data-toggle="tab">question 5</a></li>
-      <li role="presentation"><a href="#q4" aria-controls="settings" role="tab" data-toggle="tab">question 6</a></li>
-      <li role="presentation"><a href="#q4" aria-controls="settings" role="tab" data-toggle="tab">question 7</a></li>
-    </ul>
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#q1" aria-controls="home" role="tab" data-toggle="tab">question 1</a></li>
+        <li role="presentation"><a href="#q2" aria-controls="profile" role="tab" data-toggle="tab">question 2</a></li>
+        <li role="presentation"><a href="#q3" aria-controls="messages" role="tab" data-toggle="tab">question 3</a></li>
+        <li role="presentation"><a href="#q4" aria-controls="settings" role="tab" data-toggle="tab">question 4</a></li>
+        <li role="presentation"><a href="#q5" aria-controls="settings" role="tab" data-toggle="tab">question 5</a></li>
+        <li role="presentation"><a href="#q6" aria-controls="settings" role="tab" data-toggle="tab">question 6</a></li>
+        <li role="presentation"><a href="#q7" aria-controls="settings" role="tab" data-toggle="tab">question 7</a></li>
+        <li role="presentation"><a href="#q8" aria-controls="settings" role="tab" data-toggle="tab">question 8</a></li>
+        <li role="presentation"><a href="#q9" aria-controls="settings" role="tab" data-toggle="tab">question 9</a></li>
+      </ul>
 
-    <!-- Tab panes -->
-    <div class="tab-content">
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <!-- question 1 -->
         <div role="tabpanel" class="tab-pane active" id="Q1">
-                       <div class="row">
-                           <div class="col-md-12">
-                               <pre>   $("#Q1button").on("click", function() {
-                           var str = "";
-                           for (var i = 1; i <= 6; i++) {
-                               // write i stars + <br/>
-                               console.log("i+ " + 1);
-                               for (var j = 1; j <= i; j++) {
+          <div class="row">
+            <div class="col-md-12">
+              <pre>
+                $("#Q1button").on("click", function() {
+                          var str = "";
+                          for (var i = 1; i <= 6; i++) {
+                              // write i stars + <br/>
+                              console.log("i+ " + 1);
+                              for (var j = 1; j <= i; j++) {
 
-                                   str = str + "#";
-                                   console.log("str " + str);
+                                  str = str + "#";
+                                  console.log("str " + str);
 
-                               }
-   								str = str + "<br/>";
-                           }
+                              }
+  								str = str + "<br/>";
+                          }
 
-                       $("#Q1result").html(str);
-                   });</pre>
-                           </div>
-                           <div class="col-md-12"><button id="Q1button" type="button" class="btn btn-primary">Primary</button></div>
-                           <div class="col-md-12">
-                               <div id="Q1result"></div>
-                           </div>
+                      $("#Q1result").html(str);
+                  });
+                </pre>
+            </div>
+            <div class="col-md-12">
+              <button id="Q1button" type="button" class="btn btn-primary">Primary</button>
+            </div>
+            <div class="col-md-12">
+              <div id="Q1result"></div>
+            </div>
 
-                       </div>
-                   </div>
+          </div>
+        </div>
 
-      <div role="tabpanel" class="tab-pane" id="q2">
+        <!-- question 2 -->
+        <div role="tabpanel" class="tab-pane" id="Q2">
+          <div class="row">
+            <div class="col-md-12">
+              <pre>
+                $("#Q2button").on("click", function() {
+                                        var foobar ="";
+            				for(var i=1; i<=100; i++){
+            				if(i%3===0 && i%5===0){
+            				document.write('FooBar');}
+            				else if(i%3===0){
+            				document.write('Foo');}
+            				else if(i%5===0){
+            				document.write('Bar');}
+            				else {
+            					// This writes for every # that is not a multiple of three or five
+            					document.write(i);
+            					// document.write publishes it to the page
+            				}
+            				}
 
-      </div>
 
-      <div role="tabpanel" class="tab-pane" id="q3">
+            				$("#Q2result").html(i);
+              });
+            </pre>
+            </div>
+            <div class="col-md-12">
+              <button id="Q2button" type="button" class="btn btn-primary">Primary</button>
+            </div>
+            <div class="col-md-12">
+              <div id="Q2result"></div>
+            </div>
+          </div>
+        </div>
 
-      </div>
+        <!-- question 3 -->
+        <div role="tabpanel" class="tab-pane" id="Q3">
+          <div class="row">
+            <div class="col-md-12">
+              <pre>
+                $("#Q3button").on("click", function() {
+                     	 var str = "";
+      				for(var i = 0; i < 8; i++) {
+      				for(var j = 0; j < 8; j++) {
+      				if((i+j)%2 == 0) {
+        					str += " ";}
+      				else {str += "#";}
+      						}
+      				console.log(str); //newline included
+      				str = "";
 
-      <div role="tabpanel" class="tab-pane" id="q4">
+      						}
 
-      </div>
+      				$("#Q3result").html("Check Console");
+                  });
+              </pre>
+            </div>
+            <div class="col-md-12">
+              <button id="Q3button" type="button" class="btn btn-primary">Primary</button>
+            </div>
+            <div class="col-md-12">
+              <div id="Q3result"></div>
+            </div>
+          </div>
+        </div>
 
-      <div role="tabpanel" class="tab-pane" id="q5">
+        <!-- question 4 -->
+        <div role="tabpanel" class="tab-pane" id="Q4">
+          <div class="row">
+            <div class="col-md-12">
+              <pre>
+                $("#Q4button").on("click", function() {
+    var B = ""; //this is a variabale
+    var sen = prompt("Just type"); // text box
+    var countB = []; //this is an array that counts the B's
+    for (var i = 0; i < sen.length; i++) { //i < sen.length; this is the limit of the search (whatever they type in the box)
+        if (sen[i] === "B") { //trying to find the B
+            countB.push("B"); // push the answer in the screen
+        }
+    }
 
-      </div>
+    // this text "How many Bs" or if there are no B's text would say "No B's"
+    if (countB.length === 0) { // What happens when there are no B's :ALSO .length is number of characters.
+        B = "No B's";
+    } else { // What happens when there are B's
+        B = countB.length;
+    }
+    $("#Q4result").html(B);
+});
+              </pre>
+            </div>
+            <div class="col-md-12">
+              <button id="Q4button" type="button" class="btn btn-primary">Primary</button>
+            </div>
+            <div class="col-md-12">
+              <div id="Q4result"></div>
+            </div>
+          </div>
+        </div>
 
-      <div role="tabpanel" class="tab-pane" id="q6">
+        <!-- question 5 -->
+        <div role="tabpanel" class="tab-pane" id="Q5">
+          <div class="row">
+            <div class="col-md-12">
+              <pre>
+                $("#Q5button").on("click", function() {
 
-      </div>
+		var B = ""; //this is a variabale
+		var sen = prompt ("Just type"); // text box
+		var countChar = [];
+		//var countB = []; //this is an array that counts the B's
+		for (var i = 0; i < sen.length;  i++) { //i < sen.length; this is the limit of the search (whatever they type in the box)
+			if (sen [i]==="B") { //trying to find the B
+				countChar.push("B","b"); // push the answer in the screen
+			}
+		}
 
-      <div role="tabpanel" class="tab-pane" id="q7">
+		// this text "How many Bs" or if there are no B's text would say "No B's"
+		if (countChar.length ===0){ // What happens when there are no B's :ALSO .length is number of characters.
+			B = "No B's or b's";
+			}
+
+		else { // What happens when there are B's
+			B = countChar.length;
+			}
+
+        $("#Q5result").html(B);
+    });
+              </pre>
+            </div>
+            <div class="col-md-12">
+              <button id="Q5button" type="button" class="btn btn-primary">Primary</button>
+            </div>
+            <div class="col-md-12">
+              <div id="Q5result"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- question 6 -->
+        <div role="tabpanel" class="tab-pane" id="Q6">
+          <div class="row">
+            <div class="col-md-12">
+              <pre>
+                function range (start,end){
+                		 var arr = [];
+                		 	//arr.push(1);
+                			//arr.push(5);
+                			for (start; start <= end; start++){
+                				arr.push(start);
+
+                				}
+
+                		 return arr;
+                	 }
+
+                 	$("#Q6button").on("click", function() {
+
+                		//range (3,5);
+                		var rangeAnswer = range(2,6);
+
+                	$("#Q6result").html("Answer is: " + rangeAnswer.join());
+                            });
+              </pre>
+            </div>
+            <div class="col-md-12">
+              <button id="Q6button" type="button" class="btn btn-primary">Primary</button>
+            </div>
+            <div class="col-md-12">
+              <div id="Q6result"></div>
+            </div>
+          </div>
+        </div>
+
+      <!-- question 7 -->
+        <div role="tabpanel" class="tab-pane" id="Q7">
+          <div class="row">
+            <div class="col-md-12">
+              <pre>
+                $("#Q7button").on("click", function() {
+
+		var arr = [1,2,3,4];
+		var total=0;
+		for(var i in arr) { total += arr[i]; }
+
+            $("#Q7result").html(total);
+        });
+             </pre>
+            </div>
+            <div class="col-md-12">
+              <button id="Q7button" type="button" class="btn btn-primary">Primary</button>
+            </div>
+            <div class="col-md-12">
+              <div id="Q7result"></div>
+            </div>
+          </div>
+        </div>
+
+      <!-- question 8 -->
+        <div role="tabpanel" class="tab-pane" id="Q8">
+          <div class="row">
+            <div class="col-md-12">
+              <pre>
+                function range (end,start){
+		 var arr = [];
+		 	//arr.push(5);
+			//arr.push(1);
+			for (end; end >= start; end--){
+				arr.push(end);
+
+				}
+
+		 return arr;
+	 }
+
+
+
+		$("#Q8button").on("click", function() {
+
+
+		var reverseArray = range(5,1);
+
+
+
+            $("#Q8result").html("Answer is: " + reverseArray.join());
+        });
+              </pre>
+            </div>
+            <div class="col-md-12">
+              <button id="Q8button" type="button" class="btn btn-primary">Primary</button>
+            </div>
+            <div class="col-md-12">
+              <div id="Q8result"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- question 9 -->
+        <div role="tabpanel" class="tab-pane" id="Q9">
+          <div class="row">
+            <div class="col-md-12">
+              <pre>
+                function range (end,start){
+                		 var arr = [];
+                		 	//arr.push(5);
+                			//arr.push(1);
+                			for (end; end >= start; end--){
+                				arr.push(end);
+
+                				}
+
+                		 return arr;
+                	 }
+
+
+
+
+
+                		$("#Q9button").on("click", function() {
+
+                           //var reverseArray = range(5,1);
+                		  var reverseArrayInPlace =range(5,1);
+                		    $("#Q9result").html("Answer is: " + reverseArrayInPlace);
+                        });
+              </pre>
+            </div>
+            <div class="col-md-12">
+              <button id="Q9button" type="button" class="btn btn-primary">Primary</button>
+            </div>
+            <div class="col-md-12">
+              <div id="Q9result"></div>
+            </div>
+          </div>
+        </div>
+      <!-- end of questions -->
 
       </div>
 
     </div>
-
-  </div>
-
     <footer class="row footer">
-      <p class="text-muted rowMargins">Place sticky footer content here.</p>
+      <p class="text­muted rowMargins">Place sticky footer content here.</p>
     </footer>
 
-  </div>
-  <!--end container-->
-  <script>
-      $(document).ready(function() {
 
+
+  </div>
+  <script>
+    $(document).ready(function() {
+
+      //question 1
+      $("#q1button").on("click", function() {
+        var str = "";
+        // we want the string below
+        //#<br/> ####<br/> #####<br/> ######<br/> #######<br/>
+        for (var i = 1; i <= 6; i++) {
+          // write i stars + <br/>
+          console.log("i+ " + 1);
+          for (var j = 1; j <= i; j++) {
+            str = str + "#";
+            console.log("str " + str);
+          }
+          str = str + "<br/>";
+        }
+        $("#q1result").html(str);
       });
+
+      //question 2
+      $("#q2button").on("click", function() {
+        var foobar = "";
+        for (var i = 1; i <= 100; i++) {
+          if (i % 3 === 0 && i % 5 === 0) {
+            foobar += "FooBar <br>";
+            // Link things together in a chain or series.
+          } else if (i % 3 === 0) {
+            foobar += "Foo <br>";
+          } else if (i % 5 === 0) {
+            foobar += "Bar <br>";
+          } else {
+            // This writes for every # that is not a multiple of three or five
+            //document.write(i);
+            // document.write publishes it to the page
+            foobar += i + "<br>";
+          }
+        }
+        $("#q2result").html(foobar);
+        //bewareOfCaps <- write like this
+        //First word is lowercase and others capital NO SPACES!
+      });
+
+      //question 3
+      $("#q3button").on("click", function() {
+        var str = "";
+        for (var i = 0; i < 8; i++) {
+          for (var j = 0; j < 8; j++) {
+            if ((i + j) % 2 == 0) {
+              str += " ";
+            } else {
+              str += "#";
+            }
+          }
+
+          str = str + "#";
+          console.log("str " + str);
+        }
+        str = str + "<br/>";
+
+
+        $("#q3result").html(str);
+      });
+
+      //question 4
+      $("#q4button").on("click", function() {
+        var B = ""; //this is a variabale
+        var sen = prompt("Just type"); // text box
+        var countB = []; //this is an array that counts the B's
+        for (var i = 0; i < sen.length; i++) { //i <sen.length; this is the limit of the search (whatever they type in the box)
+          if (sen[i] === "B") { //trying to find the B
+            countB.push("B"); // push the answer in the screen
+          }
+        }
+
+        // this text "How many Bs" or if there are no B's text would say "No B's"
+        if (countB.length === 0) { // What happens when there are no B's :ALSO .length is number of characters.
+          B = "No B's";
+        } else { // What happens when there are B's
+          B = countB.length;
+        }
+        $("#q4result").html(B);
+      });
+
+
+      //question 5
+      $("#q5button").on("click", function() {
+        var B = ""; //this is a variabale
+        var sen = prompt("Just type"); // text box
+        var countChar = [];
+        //var countB = []; //this is an array that counts the B's
+        for (var i = 0; i < sen.length; i++) { //i <sen.length; this is the limit of the search (whatever they type in the box)
+          if (sen[i] === "B") { //trying to find the B
+            countChar.push("B", "b"); // push the answer in the screen
+          }
+        }
+
+        // this text "How many Bs" or if there are no B's text would say "No B's"
+        if (countChar.length === 0) { // What happens when there are no B's :ALSO .length is number of characters.
+          B = "No B's or b's";
+        } else { // What happens when there are B's
+          B = countChar.length;
+        }
+
+        $("#q5result").html(B);
+      });
+
+      function range(start, end) {
+        var arr = [];
+        //arr.push(1);
+        //arr.push(5);
+        for (start; start <= end; start++) {
+          arr.push(start);
+        }
+        return arr;
+      }
+
+      //question 6
+      $("#q6button").on("click", function() {
+        //range (3,5);
+        var rangeAnswer = range(2, 6);
+        $("#q6result").html("Answer is: " + rangeAnswer.join());
+      });
+
+      //question 7
+      $("#q7button").on("click", function() {
+        var arr = [1, 2, 3, 4];
+        var total = 0;
+        for (var i in arr) {
+          total += arr[i];
+        }
+        $("#q7result").html(total);
+      });
+    });
+
+    function range(end, start) {
+      var arr = [];
+      //arr.push(5);
+      //arr.push(1);
+      for (end; end >= start; end--) {
+        arr.push(end);
+      }
+      return arr;
+    }
+
+    //question 8
+    $("#q8button").on("click", function() {
+      var reverseArray = range(5, 1);
+      $("#q8result").html("Answer is: " + reverseArray.join());
+    });
+
+    function range(end, start) {
+      var arr = [];
+      //arr.push(5);
+      //arr.push(1);
+      for (end; end >= start; end--) {
+        arr.push(end);
+      }
+      return arr;
+    }
+
+    //question 9
+    $("#q9button").on("click", function() {
+      //var reverseArray = range(5,1);
+      var reverseArrayInPlace = range(5, 1);
+      $("#q9result").html("Answer is: " + reverseArrayInPlace);
+    });
   </script>
   <script src="http://zellissesdeguzman.github.io/js/getNav.js"></script>
 </body>
