@@ -12,76 +12,90 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="js.takeAnOrder.js"></script>
+
 </head>
 
 <body>
 
   <div class="container">
+    <div class="row">
+<div class="col-md-2"></div>
+      <div class="col-md-4"><!-- input-->
+        <input id="mySingleLineText" class="form-control" type="text" value="Type here">
+      </div>
+      <div class="col-md-3"></div>
+</div>
+<div class="row">
+      <div class="col-md-6"><!--textarea -->
+        <textarea id="myTextarea" class="form-control" rows="10" cols="50">Write soemthing about your self</textarea>
+      </div>
+      <br>
+      <div class="col-md-6"><!--select -->
+        <select id="mySelect" class="form-control"> Age Group
+          <option value="value1">Teenager</option>
+          <option value="value2" selected>Adult</option>
+          <option value="value3">Senior</option>
+        </select>
+          <div id="mySelectMessage"></div>
+      </div>
 
-  <h1> ABOUT YOU </h1>
+      <div class="col-md-6"><!-- radio-->
 
-    <div class="row"> </div>
+        <div class="radio-inline">
+          <label>
+            <input type="radio" name="gender" value="male" checked>
+            Male
+          </label>
+        </div>
+        <div class="radio-inline">
+          <label>
+            <input type="radio" name="gender" value="female">
+            Female
+          </label>
+        </div>
+        <div class="radio-inline">
+          <label>
+            <input type="radio" name="gender" value="other">
+            Other
+          </label>
+        </div>
 
-    <div id="wrapper">
-    <input id="search" type="text" value="Full Name">
-    <br>
-    <br>
-    <textarea id="textBox" rows="10" cols="50">Write your message here.</textarea>
-    <br>
-    <br>
-    <p>Number of rows.</p>
-    <select id="myChoice">
-      <option value="value0"></option>
-      <br>
-      <option value="value1">Row 1</option>
-      <br>
-      <br>
-      <option value="value2">Row 2</option>
-      <br>
-      <br>
-      <option value="value3">Row 3</option>
-      <br>
-      <br>
-    </select>
-    <br>
-    <br>
-    <p>Gender</p>
-    <div id="myChoiceMessage"></div>
-    <div id="myGender"></div>
-     <input type="radio" name="gender" value="male"> male
-     <br>
-     <br>
-    <input type="radio" name="gender" value="female"> female
-    <br>
-    <br>
-    <input type="radio" name="gender" value="other"> other
-    <br>
-    <br>
-    <p>Favoirt way to travel</p>
-    <input type="checkbox" name="vehicle" value="Car">Car
-    <br>
-    <input type="checkbox" name="vehicle" value="Train">Public Transport
-    <br>
-    <input type="checkbox" name="vehicle" value="Bus">Bus
-    <br>
-    <input type="checkbox" name="vehicle" value="Taxi">Taxi
-    <br>
-    <input type="checkbox" name="vehicle" value="Other">Other
-    <br>
-    <br>
-    <button id="myButton" type="button">Click Me!</button>
-    <br>
-    <br>
-    <div id="log">LOG</div>
+        <br>
+        <br>
+      </div>
+      <div class="col-md-6"><!-- checkbox-->
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="vehicle" value="Train">
+            I take the Train
+          </label>
+        </div>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="vehicle" value="Car">
+            I have a car
+          </label>
+        </div>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" name="vehicle" value="Walk">
+            I walk
+          </label>
+        </div>
+
+      </div>
+      <div class="col-md-6"><!--button -->
+        <button class="btn btn-default" id="myButton" type="button">Click Me!</button>
+      </div>
+
+      <div class="col-md-6"><!--log -->
+          <div id="log">LOG</div>
+      </div>
 
     </div>
-  </div>
-
-    <footer class="row footer">
-      <p class="text-muted rowMargins">Place sticky footer content here.</p>
-    </footer>
-
   </div>
   <script src="js/takeAnOrder.js"></script>
   <script src="http://zellissesdeguzman.github.io/js/getNav.js"></script>

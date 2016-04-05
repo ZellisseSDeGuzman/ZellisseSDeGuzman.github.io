@@ -1,33 +1,38 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>Final Assignemnt</title>
+  <title>Rent - A - Cat</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker.css">
+  <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+  <!--https://github.com/eternicode/bootstrap-datepicker-->
   <link rel="stylesheet" href="css/style.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js"></script>
+
 </head>
 
 <body>
 
   <div class="container">
     <ul class="nav nav-pills">
-      <li role="presentation" id="homePage" class="active"><a href="#">Rent-a-Cat</a></li>
+      <li role="presentation" id="homePage" class="active"><a href="#">Rent - A - Cat</a></li>
       <li role="presentation" id="seeCatsPage"><a href="#">See Cats</a></li>
-      <li role="presentation" id="orderPage"><a href="#">Orders</a></li>
+      <li role="presentation" id="orderPage"><a href="#">Order</a></li>
     </ul>
 
-  
+    <!--all $.get will be put in pageContent-->
+    <span id="pageContent"></span>
 
-  <!--all $.get will be put in pageContent-->
-  <span id="pageContent"></span>
-
+  </div>
   <script src="js/final.js"></script>
+
 </body>
 
 </html>
