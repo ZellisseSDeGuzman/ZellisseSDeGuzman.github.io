@@ -6,24 +6,85 @@
   <title>Bootstrap 3 Responsive Template</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+
+  <link rel="stylesheet" href="https://ZellisseSDeGuzman.github.io/css/style.css">
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="js.takeAnOrder.js"></script>
 </head>
 
 <body>
 
   <div class="container">
-    <div class="row">
-  HI
+
+  <h1> ABOUT YOU </h1>
+
+    <div class="row"> </div>
+
+    <div id="wrapper">
+    <input id="search" type="text" value="Full Name">
+    <br>
+    <br>
+    <textarea id="textBox" rows="10" cols="50">Write your message here.</textarea>
+    <br>
+    <br>
+    <p>Number of rows.</p>
+    <select id="myChoice">
+      <option value="value0"></option>
+      <br>
+      <option value="value1">Row 1</option>
+      <br>
+      <br>
+      <option value="value2">Row 2</option>
+      <br>
+      <br>
+      <option value="value3">Row 3</option>
+      <br>
+      <br>
+    </select>
+    <br>
+    <br>
+    <p>Gender</p>
+    <div id="myChoiceMessage"></div>
+    <div id="myGender"></div>
+     <input type="radio" name="gender" value="male"> male
+     <br>
+     <br>
+    <input type="radio" name="gender" value="female"> female
+    <br>
+    <br>
+    <input type="radio" name="gender" value="other"> other
+    <br>
+    <br>
+    <p>Favoirt way to travel</p>
+    <input type="checkbox" name="vehicle" value="Car">Car
+    <br>
+    <input type="checkbox" name="vehicle" value="Train">Public Transport
+    <br>
+    <input type="checkbox" name="vehicle" value="Bus">Bus
+    <br>
+    <input type="checkbox" name="vehicle" value="Taxi">Taxi
+    <br>
+    <input type="checkbox" name="vehicle" value="Other">Other
+    <br>
+    <br>
+    <button id="myButton" type="button">Click Me!</button>
+    <br>
+    <br>
+    <div id="log">LOG</div>
+
     </div>
+  </div>
 
     <footer class="row footer">
       <p class="text-muted rowMargins">Place sticky footer content here.</p>
     </footer>
 
   </div>
+  <script src="js/takeAnOrder.js"></script>
   <script src="http://zellissesdeguzman.github.io/js/getNav.js"></script>
-
 </body>
 
 </html>
