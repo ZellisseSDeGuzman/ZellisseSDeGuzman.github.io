@@ -16,14 +16,14 @@ getPartial(page);
 
 function getPartial(partial){
 
-  if(partial == "homePage") { //ajax get home.html
+  if(partial === "homePage") { //ajax get home.html
     $.get("partials/homePage.html", function(data) {
       $("#pageContent").html(data);
-      $('.carousel').carousel()
+      $('.carousel').carousel();
 
     })
 
-  } else if (partial == "Order.html") {
+  } else if (partial === "Order.html") {
     $.getJSON("jsonDataBase/finalProject.json", function(data) {
 
       console.dir(data);
