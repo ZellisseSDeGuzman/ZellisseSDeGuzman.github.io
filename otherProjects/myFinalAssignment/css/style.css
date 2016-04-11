@@ -1,3 +1,13 @@
+h1{
+font-family: 'Montserrat', sans-serif;
+text-align: center;
+padding-bottom: 10px;
+}
+
+body{
+  font-family: 'Arimo', sans-serif;
+}
+
 <style type="text/css">
   .carousel {
     background: #ffffff;

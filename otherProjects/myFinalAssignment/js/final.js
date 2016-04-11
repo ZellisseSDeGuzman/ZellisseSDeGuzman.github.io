@@ -23,7 +23,7 @@ function getPartial(partial){
 
     })
 
-  } else if (partial == "seeCatsPage") {
+  } else if (partial == "Order.html") {
     $.getJSON("jsonDataBase/finalProject.json", function(data) {
 
       console.dir(data);

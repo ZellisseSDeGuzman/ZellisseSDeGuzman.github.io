@@ -1,8 +1,8 @@
 [{
-  "type" : "Calico",
+  "type" : "1",
   "name" : "Paws",
   "gender" : "Male",
-  "image" : "images/cat1.jpg",
+  "image" : "images/dino12.jpg",
   "comments": [
     {
       "username" : "BestBud",
