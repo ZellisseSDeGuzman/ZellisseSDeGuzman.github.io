@@ -33,10 +33,7 @@ $(document).ready(function() {
                                     '<div class="dinoName">' + item.name + '</div>' +
                                     '<div class="dinoGenre"><small>Genre </small>' + item.genre + '</div>' +
                                     '<img class="dinoImage" src="' + item.image + '"/>' +
-                                    //deleted commentsContainer
-                                    '<div class="panel panel-default">' + //added
-                                    '<div class="panel-heading">Renter Comments</div>'; //added
-
+                                    
                                 html += '</div>' + //panel
                                     '</div>'; //col-md-4
                             }); //each cat
