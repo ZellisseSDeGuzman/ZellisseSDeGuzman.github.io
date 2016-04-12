@@ -32,8 +32,8 @@ $(document).ready(function() {
                                 html += '<div class="col-xs-12 col-md-4 jsonCat">' +
                                     '<div class="dinoName">' + item.name + '</div>' +
                                     '<div class="dinoGenre"><small>Genre </small>' + item.genre + '</div>' +
-                                    '<img class="dinoImage" src="' + item.image + '"/>' +
-                                    
+                                    '<img class="dinoImage" src="' + item.image + '"/>' + ; //added
+
                                 html += '</div>' + //panel
                                     '</div>'; //col-md-4
                             }); //each cat
