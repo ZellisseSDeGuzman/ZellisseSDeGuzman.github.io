@@ -5,7 +5,7 @@
 
 .carousel-control {
     background-color: none;
-    color: black;
+    color: #061e42;
 }
 
 .carousel-control.left, .carousel-control.right {
@@ -48,6 +48,11 @@ h1{
 p{
 font-family: 'Muli', sans-serif;
 font-size: 20px;
+}
+
+body{
+background-color: #061e42;
+opacity: 1;
 }
 
 small {

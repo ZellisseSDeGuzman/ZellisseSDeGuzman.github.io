@@ -1,8 +1,14 @@
+<div class="col-xs-12 col-md-3">
+</div>
 
-<div class="col-xs-12 col-md-3"></div>
-<h3>Customizing your Cuddle</h3>
 <div id="orderForm" class="col-xs-12 col-md-6">
 
+  <!--Start of order form-->
+
+  <!--customizing-->
+  <h3>Customizing your Cuddle</h3>
+
+  <!--body type-->
   <div class="col-xs-12 col-md-4">
     <label class="control-label">
       Chooose a Cuddles
@@ -17,6 +23,7 @@
     </select>
   </div>
 
+<!--body colour-->
   <div class="col-xs-12 col-md-4">
     <label class="control-label">
       Chooose a Body Colour
@@ -27,13 +34,14 @@
       <option value="GameFive">pink</option>
       <option value="GameTwo">purple</option>
       <option value="GameSix">red</option>
-        <option value="GameThree">yellow</option>
+      <option value="GameThree">yellow</option>
     </select>
   </div>
 
+<!--body colour 2-->
   <div class="col-xs-12 col-md-4">
     <label class="control-label">
-       Secondary Body Colour
+      Secondary Body Colour
     </label>
     <select id="gameSelect" class="form-control">
       <option value="GameOne">blue</option>
@@ -41,10 +49,11 @@
       <option value="GameFive">pink</option>
       <option value="GameTwo">purple</option>
       <option value="GameSix">red</option>
-        <option value="GameThree">yellow</option>
+      <option value="GameThree">yellow</option>
     </select>
   </div>
 
+<!--body pattern-->
   <div class="col-xs-12 col-md-4">
     <label class="control-label">
       Chooose a Body Pattern
@@ -58,6 +67,7 @@
     </select>
   </div>
 
+<!--eye colour-->
   <div class="col-xs-12 col-md-4">
     <label class="control-label">
       Chooose a Eye Colour
@@ -71,6 +81,7 @@
     </select>
   </div>
 
+<!--nail colour-->
   <div class="col-xs-12 col-md-4">
     <label class="control-label">
       Chooose a Nail Colour
@@ -84,6 +95,7 @@
     </select>
   </div>
 
+<!--Enter Cuddles Name-->
   <div class="col-xs-12 col-md-4">
     <label class="control-label">
       Cuddles Name
@@ -91,6 +103,7 @@
     <input type="text" id="startRentDate" name="name" class="form-control">
   </div>
 
+<!--Enter Owners Name-->
   <div class="col-xs-12 col-md-4">
     <label class="control-label">
       Your Name
@@ -98,6 +111,7 @@
     <input type="text" id="endRentDate" name="name" class="form-control">
   </div>
 
+<!--Enter buyers Birthday-->
   <div class="col-xs-12 col-md-4">
     <label class="control-label">
       Your Birthday
@@ -105,14 +119,29 @@
     <input type="text" id="endRentDate" name="name" class="form-control">
   </div>
 
-<div class="col-sm-6 col-xs-6 col-md-6">
+<!--Cuddle Dino gender-->
+  <div class="col-sm-6 col-xs-6 col-md-6">
     <input type="radio" name="genre" value="female"> Female
   </div>
 
-<div class="col-sm-6 col-xs-6 col-md-6">
+  <div class="col-sm-6 col-xs-6 col-md-6">
     <input type="radio" name="genre" value="female"> Male
   </div>
+  <!--End of order form-->
 
+  <!--Start of billing/mailing info-->
+  <div class="col-xs-12 col-md-12">
+    <br>
+    <h3>Billing Info</h3>
+
+    <!--Owners Name-->
+    <label class="control-label">
+      Dinos New Friend (Recivers Name)
+    </label>
+    <input type="text" id="name" class="form-control">
+  </div>
+
+<!--Name on Card-->
   <div class="col-xs-12 col-md-12">
     <label class="control-label">
       Card Holder's Name
@@ -120,6 +149,7 @@
     <input type="text" id="name" class="form-control">
   </div>
 
+<!--Card Number-->
   <div class="col-xs-12 col-md-8">
     <label class="control-label">
       Card Number
@@ -127,6 +157,7 @@
     <input id="cardNumber" type="text" maxlength="14" placeholder="Card Number" class="form-control input-md">
   </div>
 
+<!--CVV-->
   <div class="col-xs-12 col-md-4">
     <label class="control-label">
       Card CVV
@@ -134,6 +165,7 @@
     <input type="text" id="securityCode" class="form-control" maxlength="3" title="Three digits at back of your card">
   </div>
 
+<!--Card Expiry-->
   <div class="col-xs-12  col-md-6">
     <label class="control-label">
       Card Expiry Month
@@ -161,6 +193,7 @@
     <input id="expiryYear" type="text" placeholder="Year eg 2014" class="form-control input-md">
   </div>
 
+<!--Adress-->
   <div class="col-xs-12 col-md-6">
     <label class="control-label">
       Cuddles New Home (your address)
@@ -188,14 +221,18 @@
     </label>
     <input type="text" class="form-control" id="country">
   </div>
+  <!--End of Billing Info-->
 
+  <!--submit button-->
   <div class="col-md-12">
+    <br>
     <button id="submitButton" class="btn btn-success">
-      Send
+      Adopt
     </button>
   </div>
-
-<div id="successMsg" class="col-md-12 text-success"></div>
+  <!--end submit button-->
+  
+  <div id="successMsg" class="col-md-12 text-success"></div>
 </div>
 <div class="col-xs-12 col-md-3"></div>
 <div id="log">LOG</div>
