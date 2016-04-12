@@ -33,26 +33,6 @@ $(document).ready(function() {
                                     '<div class="dinoName">' + item.name + '</div>' +
                                     '<div class="dinoGenre"><small>Genre </small>' + item.genre + '</div>' +
                                     '<img class="dinoImage" src="' + item.image + '"/>' +
-                                    //deleted commentsContainer
-                                    '<div class="panel panel-default">' + //added
-                                    '<div class="panel-heading">Renter Comments</div>'; //added
-                                $.each(item.comments, function(ind, i) {
-                                        html += '<div class="panel-body">' + //added
-                                            '<div class="renterName"><small>' + i.username + '</small></div>' +
-                                            '<div class="renterComment">' + i.comment + '</div>' +
-                                            '<div class="renterStars">';
-
-                                        for (var j = 1; j <= 5; j++) {
-
-                                            if (j <= i.stars) {
-                                                html += '<img src="images/fullStar.png"/>';
-                                            } else {
-                                                html += '<img src="images/emptyStar.png"/>';
-                                            }
-                                        }
-                                        html += '</div>' + //end stars
-                                            '</div>'; //panel body
-                                    }); //each comment
 
                                 html += '</div>' + //panel
                                     '</div>'; //col-md-4
@@ -71,7 +51,7 @@ $(document).ready(function() {
 					// First jQurey Event
 						$("#startRentDate").on("focus", function(){
 						$("#log").append("<br>Search background-color");
-						$(this).css("background-color", "blue");
+						$(this).css("background-color", "orange");
 						})
 
 						.on("blur", function(){
@@ -80,7 +60,7 @@ $(document).ready(function() {
 						});
 
 						$("#submitButton").mouseenter(function(){
-						$(this).text("ORDER NOW!!");
+						$(this).text("REHOME!!");
 						$("#log").append("<br> Button mouseenter");
 							})
 						.on("mouseleave",function(){
