@@ -11,22 +11,22 @@
 		},
 {
 	"name": "dino C",
-	"Characteristics":"Tough, Stronge, Good-hearted ",
+	"Characteristics":"Tough, Stronge, Good-hearted",
 	"image":"images/dino98.jpg"
   },
 {
 "name": "dino D",
-"Characteristics":"Shy, Defensive, Helpful ",
+"Characteristics":"Shy, Defensive, Helpful",
 "image":"images/dino97.jpg"
   },
 {
 "name": "dino E",
-"Characteristics":"Sporty, Fast, Gentale ",
+"Characteristics":"Sporty, Fast, Gentale",
 "image":"images/dino96.jpg"
   },
 {
 "name": "dino F",
-"Characteristics":"Clumsy, Joker, Caring ",
+"Characteristics":"Clumsy, Joker, Caring",
 "image":"images/dino95.jpg"
   }
 ]

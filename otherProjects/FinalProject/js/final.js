@@ -36,8 +36,8 @@ $(document).ready(function() {
 
 
 
-                                //html += '</div>' + //panel
-                                    //'</div>'; //col-md-4
+                                html += '</div>' + //panel
+                                    '</div>'; //col-md-4
                             }); //each cat
 
                         $("#pageContent").html(html);
