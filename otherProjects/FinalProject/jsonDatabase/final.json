@@ -1,32 +1,32 @@
 [
 {
 	"name": "dino A",
-	"characters":"Loving, Caring, Friendly",
+	"characteristics":"Loving, Caring, Friendly",
 	"image":"images/dino93.jpg"
 	},
 {
 	"name": "dino B",
-	"characters":"Romance, Adventure, Funny",
+	"characteristics":"Romance, Adventure, Funny",
 	"image":"images/dino99.jpg"
 		},
 {
 	"name": "dino C",
-	"characters":"Tough, Stronge, Good-hearted ",
+	"characteristics":"Tough, Stronge, Good-hearted ",
 	"image":"images/dino98.jpg"
   },
 {
 "name": "dino D",
-"characters":"Shy, Defensive, Helpful ",
+"characteristics":"Shy, Defensive, Helpful ",
 "image":"images/dino97.jpg"
   },
 {
 "name": "dino E",
-"characters":"Sporty, Fast, Gentale ",
+"characteristics":"Sporty, Fast, Gentale ",
 "image":"images/dino96.jpg"
   },
 {
 "name": "dino F",
-"characters":"Clumsy, Joker, Caring ",
+"characteristics":"Clumsy, Joker, Caring ",
 "image":"images/dino95.jpg"
   }
 ]
