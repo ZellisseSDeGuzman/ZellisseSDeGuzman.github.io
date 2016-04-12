@@ -31,15 +31,13 @@ $(document).ready(function() {
                         $.each(data, function(index, item) {
                                 html += '<div class="col-xs-12 col-md-4 jsonCat">' +
                                     '<div class="dinoName">' + item.name + '</div>' +
-                                    '<div class="dinoCharacteristics"><small> Characteristics </small>' + item.genre + '</div>' +
+                                    '<div class="dinoCharacteristics"><small>Characteristics</small>' + item.genre + '</div>' +
                                     '<img class="dinoImage" src="' + item.image + '"/>' +
-                                    //deleted commentsContainer
-                                    '<div class="panel panel-default">' + //added
-                                    '<div class="panel-heading">Renter Comments</div>'; //added
 
 
-                                html += '</div>' + //panel
-                                    '</div>'; //col-md-4
+
+                                //html += '</div>' + //panel
+                                    //'</div>'; //col-md-4
                             }); //each cat
 
                         $("#pageContent").html(html);
