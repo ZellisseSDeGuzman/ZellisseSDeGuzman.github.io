@@ -2,36 +2,36 @@
 {
 	"name": "dino A",
 	"genre":"Loving, Caring, Friendly",
-	"image":"images/dino0.jpg"
+	"image":"images/dino93.jpg"
 	},
 {
 	"name": "dino B",
 	"genre":"Romance, Adventure, Funny",
-	"image":"images/dino1.jpg"
+	"image":"images/dino99.jpg"
 		},
 {
 	"name": "dino C",
 	"genre":"Tough, Stronge, Good-hearted ",
-	"image":"images/dino2.jpg"
+	"image":"images/dino98.jpg"
   },
 {
 "name": "dino D",
 "genre":"Shy, Defensive, Helpful ",
-"image":"images/dino6.jpg"
+"image":"images/dino97.jpg"
   },
 {
 "name": "dino E",
 "genre":"Sporty, Fast, Gentale ",
-"image":"images/dino7.jpg"
+"image":"images/dino96.jpg"
   },
 {
 "name": "dino F",
 "genre":"Clumsy, Joker, Caring ",
-"image":"images/dino9.jpg"
+"image":"images/dino95.jpg"
   },
 {
 "name": "dino G",
 "genre":"Engergic, Senstive, Loving ",
-"image":"images/dino10.jpeg"
+"image":"images/dino94.jpeg"
 			}
 	]
