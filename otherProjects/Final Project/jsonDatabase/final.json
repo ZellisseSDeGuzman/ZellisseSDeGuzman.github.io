@@ -18,4 +18,19 @@
 "name": "dino D",
 "genre":"Shy, Defensive, Helpful ",
 "image":"images/dino6.jpg",
+  },
+{
+"name": "dino E",
+"genre":"Sporty, Fast, Gentale ",
+"image":"images/dino7.jpg",
+  },
+{
+"name": "dino F",
+"genre":"Clumsy, Joker, Caring ",
+"image":"images/dino9.jpg",
+  },
+{
+"name": "dino G",
+"genre":"Engergic, Senstive, Loving ",
+"image":"images/dino10.jpeg",
 			}]
