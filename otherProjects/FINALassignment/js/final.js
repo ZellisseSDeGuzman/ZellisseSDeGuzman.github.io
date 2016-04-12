@@ -30,10 +30,10 @@ $(document).ready(function() {
 
                         $.each(data, function(index, item) {
                                 html += '<div class="col-xs-12 col-md-4 jsonCat">' +
-                                    '<div class="gameName">' + item.name + '</div>' +
-                                    '<div class="gameGenre"><small>Genre </small>' + item.genre + '</div>' +
-                                    '<div class="gameType"><small>Type </small>' + item.type + '</div>' +
-                                    '<img class="gameImage" src="' + item.image + '"/>' +
+                                    '<div class="Name">' + item.name + '</div>' +
+                                    '<div class="Genre"><small>Genre </small>' + item.genre + '</div>' +
+                                    '<div class="Type"><small>Type </small>' + item.type + '</div>' +
+                                    '<img class="Image" src="' + item.image + '"/>' +
                                     //deleted commentsContainer
                                     '<div class="panel panel-default">' + //added
                                     '<div class="panel-heading">Renter Comments</div>'; //added
