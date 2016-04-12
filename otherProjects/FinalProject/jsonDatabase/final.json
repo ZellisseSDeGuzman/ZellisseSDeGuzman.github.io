@@ -2,12 +2,12 @@
 {
 	"name": "dino A",
 	"genre":"Loving, Caring, Friendly",
-	"image":"images/dino0.jpeg"
+	"image":"images/dino0.jpg"
 	},
 {
 	"name": "dino B",
 	"genre":"Romance, Adventure, Funny",
-	"image":"images/jdino1.jpg"
+	"image":"images/dino1.jpg"
 		},
 {
 	"name": "dino C",
