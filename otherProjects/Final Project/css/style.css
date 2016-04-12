@@ -34,11 +34,14 @@
 	font-size: 24px;
 }
 
+.jumbotron{
+  background-color: #fbeae0;
+}
+
 h1{
   font-family: 'Candal', sans-serif;
 	text-align: center;
-	font-size: 50px;
-	letter-spacing: 10px;
+	font-size: 100px;
 }
 
 p{
