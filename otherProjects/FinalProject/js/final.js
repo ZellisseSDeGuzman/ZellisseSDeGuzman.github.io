@@ -38,7 +38,7 @@ $(document).ready(function() {
                                     //'<div class="panel-heading">Renter Comments</div>'; //added
 
 
-                                html += '</div>' + //panel
+                                //html += '</div>' + //panel
                                     '</div>'; //col-md-4
                             }); //each cat
 
