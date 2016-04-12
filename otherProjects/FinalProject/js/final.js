@@ -34,8 +34,8 @@ $(document).ready(function() {
                                     '<div class="dinoCharacteristics"><small>Characteristics </small>' + item.genre + '</div>' +
                                     '<img class="dinoImage" src="' + item.image + '"/>' +
                                     //deleted commentsContainer
-                                    '<div class="panel panel-default">' + //added
-                                    '<div class="panel-heading">Renter Comments</div>'; //added
+                                    //'<div class="panel panel-default">' + //added
+                                    //'<div class="panel-heading">Renter Comments</div>'; //added
 
 
                                 html += '</div>' + //panel
