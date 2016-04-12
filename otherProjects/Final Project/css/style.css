@@ -35,9 +35,15 @@
 }
 
 h1{
+  font-family: 'Candal', sans-serif;
 	text-align: center;
 	font-size: 50px;
-	letter-spacing: 20px;
+	letter-spacing: 10px;
+}
+
+p{
+font-family: 'Muli', sans-serif;
+font-size: 20px;
 }
 
 small {
