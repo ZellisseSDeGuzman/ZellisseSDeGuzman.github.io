@@ -1,8 +1,9 @@
-
+/* nav bar live colour */
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
     background-color: #ff8541;
 }
 
+/* carousel */
 .carousel-control {
     background-color: none;
     color: #061e42;
@@ -19,7 +20,7 @@
 .carousel .item img{
     margin: 0 auto; /* Align slide image horizontally center */
 }
-
+/* end carousel */
 .bs-example{
 	margin: 20px;
 }
@@ -34,11 +35,35 @@
 	font-size: 24px;
 }
 
+/* jumbotron */
 .jumbotron{
   background-color: #fbeae0;
   color: #061e42;
 }
 
+/* order styling */
+.control-label, .gens, h3 {
+  color: #fbeae0;
+}
+/* end order styling */
+
+/* json styling */
+.dinoCharacteristics, .dinoName, small{
+  color: #fbeae0;
+}
+
+.dinoName{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.dinoCharacteristics{
+  margin-bottom: 15px;
+}
+/* end json styling */
+
+/* body stlyeing */
 h1{
   font-family: 'Candal', sans-serif;
 	text-align: center;
@@ -59,6 +84,7 @@ small {
   font-weight: bold;
   font-style: italic;
 }
+/* end body stlyeing */
 
 
 .panel-heading {
@@ -66,6 +92,7 @@ small {
   text-align: center;
   font-size: 20px;
 }
+
 .vertical-center {
   min-height: 100%;
   /* Fallback for browsers do NOT support vh unit */
@@ -91,9 +118,7 @@ small {
   font-style: italic;
   letter-spacing: 5px;
 }
-#paws {
-  margin-left:15px;
-}
+
 div#orderForm{
   margin-top: 2%;
 }
