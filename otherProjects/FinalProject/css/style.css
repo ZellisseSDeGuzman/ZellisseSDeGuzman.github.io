@@ -24,18 +24,6 @@
 
 /* end carousel */
 
-.bs-example {
-  margin: 20px;
-}
-.gameImage {
-  margin: 0 auto;
-}
-.gameName {
-  text-align: center;
-  font-weight: bold;
-  font-size: 24px;
-}
-
 /* jumbotron */
 
 .jumbotron {
@@ -53,7 +41,6 @@
 
 
 /* json styling */
-
 .dinoCharacteristics, .dinoName, small {
   color: #fbeae0;
 }
@@ -64,6 +51,9 @@
 }
 .dinoCharacteristics {
   margin-bottom: 15px;
+}
+.dinoImage{
+  margin-top: 20px;
 }
 
 /* end json styling */
