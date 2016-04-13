@@ -41,6 +41,7 @@
 
 
 /* json styling */
+
 .dinoCharacteristics, .dinoName, small {
   color: #fbeae0;
 }
@@ -52,8 +53,9 @@
 .dinoCharacteristics {
   margin-bottom: 15px;
 }
+
 .dinoImage{
-  margin-top: 17px;
+  margin-top: 20px;
 }
 
 /* end json styling */
